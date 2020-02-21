@@ -25,6 +25,10 @@
             height: 100px;
         }
 
+        .xs:hover {
+            cursor: pointer;
+        }
+
         .back {
             transform: rotateX(180deg);
         }
@@ -35,6 +39,11 @@
 
         .r2 {
             transform: rotateX(360deg);
+        }
+
+        button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
         }
     </style>
 </head>
@@ -55,17 +64,15 @@
     <div class="row">
         <div class="col-lg-3 col-sm-1">
         </div>
-        <div class="col-lg-6 col-sm-10 text-center xs">
+        <div class="col-lg-6 col-sm-10 text-center xs" onclick="document.querySelector('.xs').classList.toggle('r');
+document.querySelector('.front').classList.toggle('r1');
+document.querySelector('.back').classList.toggle('r2');">
             <div class="front">Слово</div>
             <div class="back"><span>Описание</span></div>
         </div>
         <div class="col-lg-3 col-sm-1">
         </div>
     </div>
-    <button onclick="document.querySelector('.xs').classList.toggle('r');
-document.querySelector('.front').classList.toggle('r1');
-document.querySelector('.back').classList.toggle('r2');">Swap
-    </button>
 </main>
 
 <footer>
