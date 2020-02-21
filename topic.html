@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
@@ -22,7 +23,7 @@
         }
 
         .xs {
-            height: 100px;
+            height: 200px;
         }
 
         .xs:hover {
@@ -44,6 +45,32 @@
         button {
             background-color: rgba(0, 0, 0, 0.5);
             border: none;
+        }
+
+        .carousel-control-next {
+            right: -15%;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .carousel-control-prev {
+            left: -15%;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .carousel-control-next-icon, .carousel-control-prev-icon {
+            background-image: none;
+        }
+
+        i {
+            color: black;
+        }
+
+        .lesson {
+            background-color: white;
+            box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.25);
+            padding: 10px;
+            transition-duration: 0.5s;
+            height: 100%;
         }
     </style>
 </head>
@@ -70,7 +97,7 @@
                     <div class="carousel-item active h-100 xs" onclick="document.querySelector('.xs').classList.toggle('r');
 document.querySelector('.front').classList.toggle('r1');
 document.querySelector('.back').classList.toggle('r2');">
-                        <div class="d-block w-100 h-100" style="background-color: gainsboro">
+                        <div class="d-block w-100 h-100">
                             <div class="front">Слово</div>
                             <div class="back"><span>Описание</span></div>
                         </div>
@@ -78,29 +105,81 @@ document.querySelector('.back').classList.toggle('r2');">
                     <div class="carousel-item h-100 xs" onclick="document.querySelector('.xs').classList.toggle('r');
 document.querySelector('.front1').classList.toggle('r1');
 document.querySelector('.back1').classList.toggle('r2');">
-                        <div class="d-block w-100 h-100" style="background-color: gainsboro">
+                        <div class="d-block w-100 h-100">
                             <div class="front1">Слово</div>
                             <div class="back1"><span>Описание</span></div>
                         </div>
                     </div>
-                    <div class="carousel-item h-100">
-                        <div class="d-block w-100 h-100" style="background-color: gainsboro">
-                            <div class="front">Слово</div>
-                            <div class="back"><span>Описание</span></div>
-                        </div>
-                    </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" >
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
+                    <i class="fa fa-arrow-left" aria-hidden="true"></i>
                 </a>
                 <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
+                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
         <div class="col-lg-3 col-sm-1">
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-lg-2 mb-4"></div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+        </div>
+        <div class="col-lg-2 mb-4"></div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
+            <div class="lesson">
+                <img src="images/icon.png" width="50%">
+                <p class="mt-3">Соединить</p>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
         </div>
     </div>
 </main>
@@ -114,12 +193,3 @@ document.querySelector('.back1').classList.toggle('r2');">
 <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
-
-<!--
-
-<div class="col-lg-6 col-sm-10 text-center xs" onclick="document.querySelector('.xs').classList.toggle('r');
-document.querySelector('.front').classList.toggle('r1');
-document.querySelector('.back').classList.toggle('r2');">
-    <div class="front">Слово</div>
-    <div class="back"><span>Описание</span></div>
-</div>-->
