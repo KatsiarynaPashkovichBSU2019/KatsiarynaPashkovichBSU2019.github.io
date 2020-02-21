@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style>
+        .front, .back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+            backface-visibility: hidden;
+            background-color: #fff;
+        }
+
+        .xs {
+            height: 100px;
+        }
+
+        .back {
+            transform: rotateX(180deg);
+        }
+
+        .r1 {
+            transform: rotateX(180deg);
+        }
+
+        .r2 {
+            transform: rotateX(360deg);
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="nav nav-pills nav-fill">
+        <a class="nav-item font-weight-bold" href="#" style="font-size: 20px">SiteName</a>
+        <a class="nav-item" href="#">
+            <input class="w-100" type="search" placeholder="Search topic">
+        </a>
+        <a class="nav-item" href="#">name surname</a>
+    </nav>
+</header>
+
+<main class="container mt-5 mb-5 text-center">
+    <h2>Topic name</h2>
+    <h4></h4>
+    <div class="row">
+        <div class="col-lg-3 col-sm-1">
+        </div>
+        <div class="col-lg-6 col-sm-10 text-center xs">
+            <div class="front">Слово</div>
+            <div class="back"><span>Описание</span></div>
+        </div>
+        <div class="col-lg-3 col-sm-1">
+        </div>
+    </div>
+    <button onclick="document.querySelector('.xs').classList.toggle('r');
+document.querySelector('.front').classList.toggle('r1');
+document.querySelector('.back').classList.toggle('r2');">Swap
+    </button>
+</main>
+
+<footer>
+    FOOTER
+</footer>
+</body>
+</html>
