@@ -6,8 +6,11 @@
 
 body {
     background-color: #F1F1F1;
+    min-height: 100vh;
 }
-
+main{
+    min-height: 70vh;
+}
 header {
     background-color: #2AC8B5;
     padding: 20px 0;
