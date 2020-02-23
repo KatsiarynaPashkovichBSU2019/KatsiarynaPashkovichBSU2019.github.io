@@ -41,7 +41,24 @@ input:focus {
     outline: none;
     border-bottom: 2px solid white;
 }
+
 ::placeholder {
     color: white;
     opacity: 0.5;
+}
+
+button {
+    background-color: #2AC8B5;
+    color: white;
+    border: 2px solid #2AC8B5;
+    padding: 5px 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #2AC8B5;
+}
+
+h4 {
+    margin-bottom: 30px;
 }

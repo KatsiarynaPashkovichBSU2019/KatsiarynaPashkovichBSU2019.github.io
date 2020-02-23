@@ -72,6 +72,9 @@
             transition-duration: 0.5s;
             height: 100%;
         }
+        .lesson:hover{
+            cursor: pointer;
+        }
 
         .topic-word {
             margin: 5px 0;
@@ -80,6 +83,10 @@
         .topic-header {
             font-size: 20px;
             margin-top: 20px;
+        }
+        .fa-star:hover{
+            cursor: pointer;
+            color: #ffd800;
         }
     </style>
 </head>
@@ -141,7 +148,7 @@ document.querySelector('.back1').classList.toggle('r2');">
     <div class="row mt-5">
         <div class="col-lg-2 mb-4"></div>
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-            <div class="lesson">
+            <div class="lesson" onclick="location.href='topic3.html'">
                 <img src="images/search.png" width="30%">
                 <p class="mt-3">Найти по определению</p>
                 <div style="position: absolute; bottom: 0; right: 0; margin: 0 15px; background-color: rgba(42,200,181,0.51); padding-top: 10px">
@@ -151,27 +158,27 @@ document.querySelector('.back1').classList.toggle('r2');">
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-            <div class="lesson">
+            <div class="lesson" onclick="location.href='topic1.html'">
                 <img src="images/search.png" width="30%">
                 <p class="mt-3">Найти определение</p>
                 <div style="position: absolute; bottom: 0; right: 0; margin: 0 15px; background-color: rgba(42,200,181,0.51); padding-top: 10px">
-                    <img src="images/complete.png" style="width: 10%; display: inline-block">
-                    <p style="display:inline-block; font-size: 12px">complete</p>
+                    <img src="images/pending.png" style="width: 10%; display: inline-block">
+                    <p style="display:inline-block; font-size: 12px">pending</p>
                 </div>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-            <div class="lesson">
+            <div class="lesson" onclick="location.href='topic5.html'">
                 <img src="images/search.png" width="30%">
                 <p class="mt-3">Найти перевод</p>
             </div>
             <div style="position: absolute; bottom: 0; right: 0; margin: 0 15px; background-color: rgba(42,200,181,0.51); padding-top: 10px">
-                <img src="images/complete.png" style="width: 10%; display: inline-block">
-                <p style="display:inline-block; font-size: 12px">complete</p>
+                <img src="images/progress.png" style="width: 10%; display: inline-block">
+                <p style="display:inline-block; font-size: 12px">in progress</p>
             </div>
         </div>
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-            <div class="lesson">
+            <div class="lesson" onclick="location.href='topic4.html'">
                 <img src="images/search.png" width="30%">
                 <p class="mt-3">Найти слово по переводу</p>
             </div>
@@ -184,7 +191,7 @@ document.querySelector('.back1').classList.toggle('r2');">
         </div>
         <div class="col-lg-2 mb-4"></div>
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
-            <div class="lesson">
+            <div class="lesson" onclick="location.href='topic6.html'">
                 <img src="images/write.jpg" width="30%">
                 <p class="mt-3">Написать слово по определению</p>
                 <div style="position: absolute; bottom: 0; right: 0; margin: 0 15px; background-color: rgba(42,200,181,0.51); padding-top: 10px">
@@ -230,7 +237,7 @@ document.querySelector('.back1').classList.toggle('r2');">
     <p class="topic-header">Words in topic</p>
     <div class="row">
         <div class="col-lg-2"></div>
-        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px">
+        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px 20px">
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-left" style="border-right: 1px solid black">culture</div>
                 <div class="col-lg-8 col-md-8 text-left">
@@ -244,7 +251,7 @@ document.querySelector('.back1').classList.toggle('r2');">
         <div class="col-lg-2"></div>
 
         <div class="col-lg-2"></div>
-        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px">
+        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px 20px">
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-left" style="border-right: 1px solid black">address</div>
                 <div class="col-lg-8 col-md-8 text-left">
@@ -258,7 +265,7 @@ document.querySelector('.back1').classList.toggle('r2');">
         <div class="col-lg-2"></div>
 
         <div class="col-lg-2"></div>
-        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px">
+        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px 20px">
             <div class="row">
                 <div class="col-lg-4 col-md-4 text-left" style="border-right: 1px solid black">claim</div>
                 <div class="col-lg-8 col-md-8 text-left">
