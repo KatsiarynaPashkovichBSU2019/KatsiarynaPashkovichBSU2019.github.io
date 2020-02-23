@@ -72,6 +72,15 @@
             transition-duration: 0.5s;
             height: 100%;
         }
+
+        .topic-word {
+            margin: 5px 0;
+        }
+
+        .topic-header {
+            font-size: 20px;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +96,7 @@
 
 <main class="container mt-5 mb-5 text-center">
     <h2>Topic name</h2>
-    <h4></h4>
+    <h4>40 words</h4>
     <div class="row">
         <div class="col-lg-3 col-sm-1">
         </div>
@@ -99,16 +108,17 @@
 document.querySelector('.front').classList.toggle('r1');
 document.querySelector('.back').classList.toggle('r2');">
                         <div class="d-block w-100 h-100">
-                            <div class="front">Слово</div>
-                            <div class="back"><span>Описание</span></div>
+                            <div class="front">address</div>
+                            <div class="back"><span>a place where someone lives</span></div>
                         </div>
                     </div>
                     <div class="carousel-item h-100 xs" onclick="document.querySelector('.xs').classList.toggle('r');
 document.querySelector('.front1').classList.toggle('r1');
 document.querySelector('.back1').classList.toggle('r2');">
                         <div class="d-block w-100 h-100">
-                            <div class="front1">Слово</div>
-                            <div class="back1"><span>Описание</span></div>
+                            <div class="front1">culture</div>
+                            <div class="back1"><span>the way of life, especially the general customs and beliefs, of a particular group of people at a particular time</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,6 +137,7 @@ document.querySelector('.back1').classList.toggle('r2');">
         <div class="col-lg-3 col-sm-1">
         </div>
     </div>
+
     <div class="row mt-5">
         <div class="col-lg-2 mb-4"></div>
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
@@ -215,12 +226,58 @@ document.querySelector('.back1').classList.toggle('r2');">
         <div class="col-lg-2 col-md-3 col-sm-6 mb-4">
         </div>
     </div>
+
+    <p class="topic-header">Words in topic</p>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-left" style="border-right: 1px solid black">culture</div>
+                <div class="col-lg-8 col-md-8 text-left">
+                    <span>the way of life, especially the general customs and beliefs, of a particular group of people at a particular time</span>
+                </div>
+                <div class="position-absolute" style="top:10px; right: 10px; ">
+                    <i class="fa fa-star float-right" aria-hidden="true" style="opacity: 0.5"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-left" style="border-right: 1px solid black">address</div>
+                <div class="col-lg-8 col-md-8 text-left">
+                    <span>a place where someone lives</span>
+                </div>
+                <div class="position-absolute" style="top:10px; right: 10px;">
+                    <i class="fa fa-star float-right" aria-hidden="true" style="opacity: 0.5"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8 topic-word" style="background-color: white; padding: 10px">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 text-left" style="border-right: 1px solid black">claim</div>
+                <div class="col-lg-8 col-md-8 text-left">
+                    <span>to say that something is true or is a fact, although you cannot prove it and other people might not believe it</span>
+                </div>
+                <div class="position-absolute" style="top:10px; right: 10px;">
+                    <i class="fa fa-star float-right" aria-hidden="true" style="opacity: 0.5"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    </div>
 </main>
 
 <footer>
-    FOOTER
+    <p class="m-0">Ушакова Наталья Витальевна</p>
+    <p class="m-0">ushakova_n_76@mail.ru</p>
 </footer>
-
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>

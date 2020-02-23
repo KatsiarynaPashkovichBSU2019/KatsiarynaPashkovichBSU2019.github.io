@@ -15,6 +15,9 @@ header {
 
 footer {
     background-color: #2AC8B5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 a {
